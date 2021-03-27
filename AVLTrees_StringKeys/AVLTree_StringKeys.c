@@ -8,7 +8,7 @@
  * "AVL Tree" data type.
  */
 /* This code is released under the MIT license.
- * See the attached LICENSE.txt file.
+ * See the attached LICENSE file.
  */
 
 #include <stdlib.h>

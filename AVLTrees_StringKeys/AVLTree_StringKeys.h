@@ -11,7 +11,7 @@
  * the source file to understand what needs to be freed after use.
  */
 /* This code is released under the MIT license.
- * See the attached LICENSE.txt file.
+ * See the attached LICENSE file.
  */
 
 #ifndef _AVLTREES_STRINGKEYS_H
