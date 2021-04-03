@@ -541,7 +541,7 @@ void _intInODFS(AVLIntNode *rootNode, void ***intPtr, int intOpt) {
     _intInODFS(rootNode->_leftSon, intPtr, intOpt);
     // Correctly increment the internal pointer.
     if (intOpt & SEARCH_KEYS) {
-        *(intPtr) = (void **)(int *)*(intPtr) + 1);
+        *(intPtr) = (void **)((int *)*(intPtr) + 1);
     } else *(intPtr) = *(intPtr) + 1;
     // Now visit the root node.
     if (intOpt & SEARCH_NODES) {
