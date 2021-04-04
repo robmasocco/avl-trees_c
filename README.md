@@ -1,7 +1,9 @@
 # avl-trees_c
 Collection of AVL trees implementations, ready for user applications programming. Written in C, requires the GNU C Library.
 
-They work as a dictionary, storing values paired with keys and rearranging records in memory to make binary searches (by keys) more efficient. Data stored can be anything that fits into a _void *_ (so 64 bits at most on x86_64 systems). They support insertion, deletion, record search, total structure deletion, and various kinds of *breadth-first* and *depth-first* searches. Since they extensively use dynamic memory (heap), options are provided to specify if keys or data are to be free'd when calling deletions, to make things faster. Currently, I developed multiple flavours, depending on the type of the key (which influences comparisons and memory usage):
+They work as a dictionary, storing values paired with keys and rearranging records in memory to make binary searches (by keys) more efficient. Data stored can be anything that fits into a _void *_ (so 64 bits at most on x86_64 systems). They support insertion, deletion, record search, total structure deletion, and various kinds of *breadth-first* and *depth-first* searches. It is possible to add multiple elements with a same key, although the behavior of subsequent *searches* and *deletions* would be undefined: which of the many instances is returned depends on the sequence of internal rotations performed up to that point.
+Since they extensively use dynamic memory (heap), options are provided to specify if keys or data are to be free'd when calling deletions, to make things faster.
+Currently, I developed multiple flavours, depending on the type of the key (which influences comparisons and memory usage):
 
 - String keys (referenced by _char *_ pointers).
 - Integer keys (*int*).
