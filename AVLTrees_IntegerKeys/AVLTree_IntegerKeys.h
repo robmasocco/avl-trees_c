@@ -14,8 +14,8 @@
  * See the attached LICENSE file.
  */
 
-#ifndef _AVLTREES_INTEGERKEYS_H
-#define _AVLTREES_INTEGERKEYS_H
+#ifndef AVLTREES_INTEGERKEYS_H
+#define AVLTREES_INTEGERKEYS_H
 
 /* These options can be OR'd in a call to the delete functions to specify
  * if also the keys and/or the data in the nodes must be freed in the heap.
